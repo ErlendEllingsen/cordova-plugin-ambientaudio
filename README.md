@@ -1,5 +1,5 @@
-# BackgroundAudio - a Cordova plugin
-by [Eddy Verbruggen](http://twitter.com/eddyverbruggen)
+# AmbientAudio - a Cordova plugin
+based on BackgroundAudio by [Eddy Verbruggen](http://twitter.com/eddyverbruggen)
 
 ## 0. Index
 
@@ -12,7 +12,7 @@ by [Eddy Verbruggen](http://twitter.com/eddyverbruggen)
 
 ## 1. Description
 
-Allows your app to keep on playing audio when it's in the background.
+Allows your app to play audio along other audio app in background.
 
 * Compatible with [Cordova Plugman](https://github.com/apache/cordova-plugman).
 * For iOS only.
@@ -23,11 +23,11 @@ Allows your app to keep on playing audio when it's in the background.
 Compatible with [Cordova Plugman](https://github.com/apache/cordova-plugman), compatible with [PhoneGap 3.0 CLI](http://docs.phonegap.com/en/3.0.0/guide_cli_index.md.html#The%20Command-line%20Interface_add_features), here's how it works with the CLI (backup your project first!):
 
 ```
-$ phonegap local plugin add https://github.com/EddyVerbruggen/cordova-plugin-backgroundaudio.git
+$ phonegap local plugin add https://github.com/mircoc/cordova-plugin-ambientaudio.git
 ```
 or
 ```
-$ cordova plugin add https://github.com/EddyVerbruggen/cordova-plugin-backgroundaudio
+$ cordova plugin add https://github.com/mircoc/cordova-plugin-ambientaudio
 $ cordova prepare
 ```
 
@@ -35,8 +35,8 @@ $ cordova prepare
 
 1\. Add the following xml to your `config.xml` in the root directory of your `www` folder:
 ```xml
-<feature name="BackgroundAudio">
-  <param name="ios-package" value="BackgroundAudio" />
+<feature name="AmbientAudio">
+  <param name="ios-package" value="AmbientAudio" />
   <param name="onload" value="true" />
 </feature>
 ```
